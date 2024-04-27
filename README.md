@@ -9,8 +9,8 @@ It aims to provide insights into how different memory management strategies affe
 process performance, memory utilization, and system efficiency.
 Contributors
 
-    Abdullah Alshatti
-    Abdulaziz Alshatti
+Abdullah Alshatti
+Abdulaziz Alshatti
 
 Compilation Instructions
 
@@ -27,11 +27,10 @@ Running the Program
 After compilation, execute the program with the following command:
  
 ./mem_sim <input file> <output file>
- 
-File Descriptions
+ File Descriptions
 
-    main.cpp: Contains the main function and handles command-line arguments, file I/O.
-    MemoryManager.cpp: Implements the core memory management logic, including frame allocation, memory reading and writing.
-    MemoryManager.h: Header file for MemoryManager.cpp, declaring the functions and data structures used for managing memory.
-    Process.cpp: Represents a process in the simulation, handling memory accesses and address translation.
-    Process.h: Header file for Process.cpp, declaring the functions and data structures used by the process.
+main.cpp: Contains the main function and handles command-line arguments, file I/O.
+MemoryManager.cpp: Implements the core memory management logic, including frame allocation, memory reading and writing.
+MemoryManager.h: Header file for MemoryManager.cpp, declaring the functions and data structures used for managing memory.
+Process.cpp: Represents a process in the simulation, handling memory accesses and address translation.
+Process.h: Header file for Process.cpp, declaring the functions and data structures used by the process.
