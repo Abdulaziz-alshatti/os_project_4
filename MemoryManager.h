@@ -3,10 +3,10 @@
 
 #include <vector>
 #include <cstddef> // for size_t
-
+#include <fstream>
 class MemoryManager {
 public:
-    MemoryManager(size_t memorySize, size_t pageSize);
+    MemoryManager(size_t memorySize, size_t pageSize, std::ofstream& outputStream);
     ~MemoryManager();
 
     void initializeMemory();
@@ -21,6 +21,7 @@ public:
     size_t getPageSize() const { return pageSize; }
 
 private:
+    std::ofstream& outputStream;
     std::vector<char> mainMemory;
     std::vector<bool> freeFrames;
     size_t totalMemorySize;
